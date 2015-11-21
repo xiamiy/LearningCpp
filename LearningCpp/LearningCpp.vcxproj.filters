@@ -24,9 +24,15 @@
     <ClCompile Include="ReverseChars.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="UtilMine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ITest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilMine.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
