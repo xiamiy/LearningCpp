@@ -4,8 +4,7 @@ using namespace std;
 
 void ReverseChars::test()
 {
-	char* str = NULL;
-	str = (char*)malloc(50);
+	char* str = (char*)malloc(50);
 	cin >> str;
 
 	char* reverseStr = (char*)malloc(strlen(str) + 1);

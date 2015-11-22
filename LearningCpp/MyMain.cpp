@@ -2,13 +2,20 @@
 #include <iostream>
 using namespace std;
 
+void operationDesc()
+{
+	cout << "======================= make a choose =======================" << endl;
+	cout << "-1: exit" << endl;
+	cout << "1: revert chars" << endl;
+	cout << "2: other" << endl;
+	cout << "=============================================================" << endl;
+	cout << "input your choice : " << endl;
+}
+
 void main()
 {
-	void operationDesc();
-
-	operationDesc();
 	int operation = 0;
-	cout << "input your choice : " << endl;
+	operationDesc();
 	cin >> operation;
 	ITest* test = NULL;
 	while (operation >= 0)
@@ -27,18 +34,10 @@ void main()
 		}
 		if (test != NULL) test->test();
 		if (test != NULL) delete test;
-		cout << "input your choice : " << endl;
+		cin.clear();
+		cin.sync();
+		operationDesc();
 		cin >> operation;
 	}
-	cout << "operation exit !" << endl;
-	system("pause");
-}
-
-void operationDesc()
-{
-	cout << "======================= make a choose =======================" << endl;
-	cout << "-1: exit" << endl;
-	cout << "1: revert chars" << endl;
-	cout << "2: other" << endl;
-	cout << "=============================================================" << endl;
+	//system("pause");
 }

@@ -23,7 +23,6 @@ class Other : public ITest
 {
 public:
 	void test() override;
-	char* Ltrim(char* p);
 };
 
 #endif
